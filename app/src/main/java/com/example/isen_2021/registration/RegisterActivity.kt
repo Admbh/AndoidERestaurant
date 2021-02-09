@@ -10,7 +10,6 @@ import android.widget.Toast
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.example.isen_2021.R
 import com.example.isen_2021.databinding.ActivityRegisterBinding
 import com.example.isen_2021.network.NetworkConstant
 import com.example.isen_2021.network.RegisterResult
@@ -42,14 +41,12 @@ class RegisterActivity : AppCompatActivity() {
     fun launchRequest() {
         val queue = Volley.newRequestQueue(this)
         val url = NetworkConstant.BASE_URL + NetworkConstant.PATH_REGISTER
-
         val jsonData = JSONObject()
         jsonData.put(NetworkConstant.ID_SHOP, "1")
         jsonData.put(NetworkConstant.EMAIL, binding.email.text)
         jsonData.put(NetworkConstant.PASSWORD, binding.password.text)
         jsonData.put(NetworkConstant.FIRST_NAME, binding.firstname)
         jsonData.put(NetworkConstant.LAST_NAME, binding.lastname)
-
         var request = JsonObjectRequest(
             Request.Method.POST,
             url,
@@ -82,7 +79,6 @@ class RegisterActivity : AppCompatActivity() {
         val editor = sharedPreferences.edit()
         editor.putInt(ID_USER, user.id)
         editor.apply()
-
         setResult(Activity.RESULT_FIRST_USER)
         finish()
     }

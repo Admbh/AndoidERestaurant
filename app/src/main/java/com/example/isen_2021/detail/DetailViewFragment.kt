@@ -1,15 +1,13 @@
 package com.example.isen_2021.detail
 
-import android.content.Context
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import com.example.isen_2021.R
 import com.example.isen_2021.databinding.FragmentDetailViewBinding
-import com.example.isen_2021.databinding.FragmentPhotoBinding
 import com.example.isen_2021.network.Dish
 
 

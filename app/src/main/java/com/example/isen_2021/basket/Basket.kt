@@ -1,7 +1,6 @@
 package com.example.isen_2021.basket
 
 import android.content.Context
-import com.example.isen_2021.detail.DetailActivity
 import com.example.isen_2021.network.Dish
 import com.google.gson.GsonBuilder
 import java.io.File

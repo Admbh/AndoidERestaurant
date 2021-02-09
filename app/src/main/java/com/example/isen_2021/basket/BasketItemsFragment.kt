@@ -7,9 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.isen_2021.R
 import com.example.isen_2021.databinding.FragmentBasketItemsBinding
-import com.example.isen_2021.databinding.FragmentDetailViewBinding
 
 
 class BasketItemsFragment(private val basket: Basket, private val delegate: BasketCellInterface) : Fragment(), BasketCellInterface {
