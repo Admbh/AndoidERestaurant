@@ -3,6 +3,7 @@ package com.example.isen_2021
 import android.content.Intent
 import android.os.Bundle
 import com.example.isen_2021.databinding.ActivityHomeBinding
+import com.example.isen_2021.map.MapsActivity
 
 class HomeActivity : BaseActivity() {
 
@@ -22,6 +23,11 @@ class HomeActivity : BaseActivity() {
 
         binding.dessertButton.setOnClickListener {
             startCategoryActivity(ItemType.DESSERT)
+        }
+
+        binding.mapButton.setOnClickListener {
+            val intent = Intent(this , MapsActivity::class.java)
+            startActivity(intent)
         }
 
     }
